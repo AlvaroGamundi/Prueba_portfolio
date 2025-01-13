@@ -172,7 +172,20 @@
 			</div>
 
                       	<li class="toggle-section" onclick="toggleNested(2, 4)">4. Project design</li>
-                        <div class="nested-content" id="nested-2-4">Content about Project design...</div>
+			<div class="nested-content" id="nested-2-4">
+    				<p>To estimate the expected loss (EL) associated with a specific loan application, three key risk parameters are considered:</p>
+    				<ol>
+        				<li><strong>Probability of Default (PD)</strong>: This represents an internal credit rating assigned to each client, which helps estimate the likelihood of the client defaulting on their obligations.</li>
+        				<li><strong>Loss Given Default (LGD)</strong>: A critical metric in risk analysis, it indicates the percentage of exposure that is not expected to be recovered in the event of a default.</li>
+        				<li><strong>Exposure at Default (EAD)</strong>: This refers to the percentage of the outstanding debt at the time of default.</li>
+    				</ol>
+    				<p>To estimate the expected loss for each loan transaction, three predictive machine learning models will be developed to estimate these parameters, and their predictions will be combined to calculate the expected loss for each loan.</p>
+				<!-- Image added here -->
+    				<div style="text-align: center;">
+        				<img src="imagen1.png" alt="Project Design Image">
+    				</div>
+			</div>
+
 			<li class="toggle-section" onclick="toggleNested(2, 5)">5. Data quality</li>
                         <div class="nested-content" id="nested-2-5">Content about Data quality...</div>
 			<li class="toggle-section" onclick="toggleNested(2, 6)">6. Exploratory data analysis</li>
