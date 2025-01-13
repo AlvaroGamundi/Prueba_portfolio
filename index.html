@@ -80,6 +80,11 @@
             border: 2px solid #c0c0c0;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
         }
+	/* Estilo para enlaces específicos como "More Info" */
+	.more-info-link {
+    		text-decoration: underline;
+    		color: inherit;
+	}
 
         .more-info-btn {
             font-size: 1.2rem;
@@ -220,7 +225,8 @@
         				<li>Imputation of null values</li>
         				<li>Correction of outliers</li>
     				</ul>
-    				<p>The entire process can be consulted in detail <a href="https://www.google.es" target="_blank" style="text-decoration: underline; color: inherit;">here</a>.</p>
+    				<p>The entire process can be consulted in detail <p><a href="https://www.google.es" target="_blank" class="more-info-link">More Info</a></p>
+			
 			</div>
 			<li class="toggle-section" onclick="toggleNested(2, 6)">6. Exploratory data analysis</li>
                         <div class="nested-content" id="nested-2-6">Content about Exploratory data analysis...</div>
