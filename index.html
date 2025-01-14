@@ -290,8 +290,20 @@
                         <div class="nested-content" id="nested-2-7">
 			<p>In this stage of the project, various feature transformation techniques will be applied to adapt the data to the specific requirements of the algorithms that will be used during the modeling phase.</p>
 			<p>For all three models, categorical variables need to be converted into numerical variables. This process will be carried out using <strong>One-Hot Encoding (OHE)</strong> and <strong>Ordinal Encoding (OE)</strong> techniques. Additionally, a <strong>Binarizer</strong> and a <strong>MinMaxScaler</strong> will be applied, as the logistic regression algorithm is particularly sensitive to differences in variable scales. These transformations ensure that all variables are normalized and ready for analysis.</p>
-			<p>Below, the specific processes applied to each of the three models are detailed.</p>	
+				
 	
+			<p><strong><u>CREATING TARGETS</u></strong></p>
+			<p>After transforming the variables, it is necessary to create the target variables that will later be used to train the models. The following sections outline the process for each model in detail.</p>
+			<p>Probability of default (PD):</p>
+			<p>The purpose of this model is to predict the probability that a given client will default on their loan. To achieve this, the variable "Status" is analyzed, with the primary criterion being that a delay of more than 90 days is classified as a default.</p>
+			<p>Below, the frequency distribution of the original "Status" variable is presented.</p>
+			<div style="text-align: center;margin-top: 20px;">
+    					<img src="imagen10.png" alt="Project Design Image" style="width: 80%; height: auto; aspect-ratio: 17.9 / 7;">
+				</div>
+			<p>During the Exploratory Data Analysis (EDA), it was observed that in certain statuses, the bank had recovered part of the capital, indicating that a default had occurred. Based on this analysis, the statuses that indicate default are: <strong>'Charged Off'</strong>, <strong>'Does not meet the credit policy. Status: Charged Off'</strong>, and <strong>'Default'</strong>.</p>
+			<p>On the other hand, the statuses that do not indicate default are: <strong>'Current'</strong>, <strong>'Late (31-120 days)'</strong>, <strong>'Late (16-30 days)'</strong>, <strong>'In Grace Period'</strong>, and <strong>'Does not meet the credit policy. Status: Fully Paid'</strong>.</p>
+
+
 			</div>
 
 
