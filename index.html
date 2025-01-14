@@ -302,11 +302,21 @@
 				</div>
 			<p>During the Exploratory Data Analysis (EDA), it was observed that in certain statuses, the bank had recovered part of the capital, indicating that a default had occurred. Based on this analysis, the statuses that indicate default are: <strong>'Charged Off'</strong>, <strong>'Does not meet the credit policy. Status: Charged Off'</strong>, and <strong>'Default'</strong>.</p>
 			<p>On the other hand, the statuses that do not indicate default are: <strong>'Current'</strong>, <strong>'Late (31-120 days)'</strong>, <strong>'Late (16-30 days)'</strong>, <strong>'In Grace Period'</strong>, and <strong>'Does not meet the credit policy. Status: Fully Paid'</strong>.</p>
-			<p>Finally, the </strong>Target PD</strong> variable is defined as a </strong>binary variable (0-1)</strong>, where 0 represents the cases where no default occurs, and 1 represents the cases where a default does happen..</p>
+			
 			<div style="text-align: center;margin-top: 20px;">
     					<img src="imagen11.png" alt="Project Design Image" style="width: 80%; height: auto; aspect-ratio: 15 / 7.6;">
 				</div>
+			<p>Finally, the </strong>Target PD</strong> variable is defined as a </strong>binary variable (0-1)</strong>, where 0 represents the cases where no default occurs, and 1 represents the cases where a default does happen.</p>
 
+			<p><u>Loss given default (LGD):</u></p>
+			<p>The objective of this model is to predict the percentage of the loan that a given borrower has not yet repaid when a default occurs. The target for this model can thus be defined as:</p>
+			<div style="text-align: center;margin-top: 20px;">
+    					<img src="imagen12.png" alt="Project Design Image" style="width: 40%; height: auto; aspect-ratio: 11,3 / 1.8;">
+				</div>
+			p>The objective of this model is to predict the percentage of the principal that will not be possible to recover from a loan that has been defaulted on. Therefore, the target for this model will be defined as:</p>
+			<div style="text-align: center;margin-top: 20px;">
+    					<img src="imagen13.png" alt="Project Design Image" style="width: 40%; height: auto; aspect-ratio: 6 / 1.8;">
+				</div>
 
 			</div>
 
