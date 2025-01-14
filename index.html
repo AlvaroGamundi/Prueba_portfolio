@@ -279,7 +279,7 @@
 				<p>At first glance, <strong>three groups</strong> can be distinguished regarding the relationship between the loan purpose and the average default rate. On one hand, we have those with a default rate <strong>above 12.5%</strong>, those <strong>between 10% and 12.5%</strong>, and those with a default rate <strong>below 10%</strong>.</p>
 				<p>However, when focusing on the frequency within our dataframe, we observe that many categories <strong>lack a sufficient statistical base</strong> to extract reliable patterns. Therefore, a good strategy to retain this information is to group them into the "Other" category.</p>
 				<p>Since the "Other" category is in a middle range regarding the default rate, the categories assigned to it, both above and below, will not significantly alter its value.</p>
-				<p>Thus, the resulting categories will be: <strong>"Debt Consolidation," "Credit Card," "Home Improvement," and "Other."</strong></p>
+				<p>Thus, the resulting categories will be: <strong>"Debt Consolidation", "Credit Card" ,"Home Improvement" and "Other."</strong></p>
 
 
 
@@ -287,7 +287,16 @@
 
 			</div>
 			<li class="toggle-section" onclick="toggleNested(2, 7)">7. Feature transformation</li>
-                        <div class="nested-content" id="nested-2-7">Content about Feature transformation...</div>
+                        <div class="nested-content" id="nested-2-7">
+			<p>In this stage of the project, various feature transformation techniques will be applied to adapt the data to the specific requirements of the algorithms that will be used during the modeling phase.</p>
+			<p>For all three models, categorical variables need to be converted into numerical variables. This process will be carried out using <strong>One-Hot Encoding (OHE)</strong> and <strong>Ordinal Encoding (OE)</strong> techniques. Additionally, a <strong>Binarizer</strong> and a <strong>MinMaxScaler</strong> will be applied, as the logistic regression algorithm is particularly sensitive to differences in variable scales. These transformations ensure that all variables are normalized and ready for analysis.</p>
+			<p>Below, the specific processes applied to each of the three models are detailed.</p>	
+	
+			</div>
+
+
+
+
 			<li class="toggle-section" onclick="toggleNested(2, 8)">8. Modelling</li>
                         <div class="nested-content" id="nested-2-8">Content about Modelling...</div>
 			<li class="toggle-section" onclick="toggleNested(2, 9)">9. Web app</li>
