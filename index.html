@@ -375,6 +375,27 @@
 
 
 			<p><strong><u>Loss given default model (LGD)</u></strong></p>
+			<p>Similar to the process carried out in the LGD model, different parameterizations of Ridge, Lasso, and LightGBM algorithms have been tested. Once again, the <strong>LightGBM</strong> architecture provides the best results, achieving a Mean Absolute Error (MAE) of 0.36.</p>
+			<p>The error of this model is relatively high, which is explained for the same reasons exposed previously (as it is also a risk acquisition model with limited features available to make predictions).</p>
+			<div style="text-align: center;margin-top: 20px;">
+    					<img src="imagen19.png" alt="Project Design Image" style="width: 40%; height: auto; aspect-ratio: 10.7 / 5;">
+			
+				</div>
+			<p>It can be seen that in reality (lgd_true) two large groups can be distinguished: a group of loans in which no amount is recovered, either because the borrower has not defaulted or because the borrower has defaulted but the bank has not been able to recover any amount; and a second group of loans in which it has been possible to recover the full amount, either because the borrower has amortised the entire loan or because it has been possible to recover the full amount a defaulted loan.</p>
+			<p>Model’s predictions tend towards intermediate loss levels, which leads to larger errors in predicting fully recovered or lost loans.</p>
+			<div style="text-align: center;margin-top: 20px;">
+    					<img src="imagen20.png" alt="Project Design Image" style="width: 80%; height: auto; aspect-ratio: 15 / 9.2;">
+			
+				</div>
+			<p>However, as presented for LGD model, the performance of the EAD model is acceptable at an aggregate level from a business point of view, as it will be covering the lost amount of loans in which the amount borrowed has been completely lost by predicting to most customers a loss level of between 25% and 75% even those who ultimately fully paid their loans, thus covering the aggregate risk of the client portfolio.</p>
+
+
+			<p><strong><u>Final Expected Loss model (EL)</u></strong></p>
+			</p>Once the probability of default, exposure at default and loss given default models have been developed, the expected loss (EL) for each new loan application is obtained by simply combining the predictions of these models and the principal amount of the loan as discussed in the methodology section.</p>
+			<div style="text-align: center;">
+    					<img src="imagen1.png" alt="Project Design Image" style="width: 40%; height: auto; aspect-ratio: 11.5 / 1;">
+				</div>
+
 			
 
 
