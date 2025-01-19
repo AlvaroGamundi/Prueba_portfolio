@@ -330,13 +330,13 @@
 			<p><strong><u>Probability of default model (PD)</u></strong></p>
 			<p>As previously explained, a logistic regression algorithm was chosen for the probability of default (PD) model. This type of model is particularly sensitive to correlations between variables. Therefore, a correlation analysis was conducted, and the results are presented below.</p>
 			<div style="text-align: center;margin-top: 20px;">
-    					<img src="Imagen14.png" alt="Project Design Image" style="width: 40%; height: auto; aspect-ratio: 6.5 / 8.2;">
+    					<img src="Imagen14.png" alt="Project Design Image" style="width: 80%; height: auto; aspect-ratio: 6.5 / 8.2;">
 				</div>
 			<p>In this analysis, a strong correlation was identified between the variables <strong>tipo_interes</strong> and <strong>rating</strong>, as well as between <strong>importe_cuota</strong> and <strong>principal</strong>. These four variables stand out as the ones with the strongest correlations within the dataset. On the other hand, most of the other correlations detected originate from One-Hot Encoding (OHE) processes. At first glance, it does not seem advisable to remove these OHE-derived variables, as doing so would result in the loss of part of the information contained in the original variables from which they are derived.</p>
 
 			<p>The following analysis focuses exclusively on evaluating the four variables with the highest correlation (<strong>tipo_interes</strong>, <strong>rating</strong>, <strong>importe_cuota</strong>, and <strong>principal</strong>) and determining whether their removal could improve the model's performance. To achieve this, the importance of each variable was analyzed in terms of the predictive power they contribute to the model. As shown in the figure below, these correlated variables also exhibit high predictive power. After comparing the model's evaluation metrics both with and without these variables, it is observed that the predictive performance of the model remains consistent. Therefore, the decision is made to <strong>retain these variables</strong> in the model while acknowledging the presence of these correlations.</p>
 			<div style="text-align: center;margin-top: 20px;">
-    					<img src="imagen15.png" alt="Project Design Image" style="width: 40%; height: auto; aspect-ratio: 14.9 / 8.4;">
+    					<img src="imagen15.png" alt="Project Design Image" style="width: 80%; height: auto; aspect-ratio: 14.9 / 8.4;">
 			
 				</div>
 			
@@ -345,7 +345,7 @@
 			<p>Considering this optimal hyperparameter combination, along with previous tests on the removal of correlated variables, it can be concluded that the information contained in the data defines the limit of the model. Although a model with good predictive capacity was achieved, it does not reach excellent performance.</p>
 			<p>To significantly improve the predictive capacity, it would be necessary to incorporate new variables that provide additional and relevant information to the model, as the current features seem to have reached their maximum explanatory potential.</p>
 			<div style="text-align: center;margin-top: 20px;">
-    					<img src="imagen16.png" alt="Project Design Image" style="width: 40%; height: auto; aspect-ratio: 14.9 / 8.4;">
+    					<img src="imagen16.png" alt="Project Design Image" style="width: 80%; height: auto; aspect-ratio: 14.9 / 8.4;">
 			
 				</div>
 			<p><strong><u>Loss given default model (LGD)</u></strong></p>
