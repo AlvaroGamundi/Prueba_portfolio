@@ -411,7 +411,7 @@
 				launch-button {
         				background-color: #d3d3d3; /* Fondo gris */
         				color: black; /* Color del texto */
-        				padding: 10px 20px;
+        				padding: 15px 30px;
         				font-size: 16px;
         				border: none;
         				border-radius: 5px;
@@ -421,6 +421,8 @@
         				width: auto; /* El botón se ajustará al ancho del texto */
         				opacity: 0;
         				animation: fadeIn 1s forwards; /* Efecto de aparición */
+					margin: 0 auto; /* Centra el botón */
+        				display: block; /* Hace que el botón se comporta como bloque */
     				}
 
     				.launch-button:hover {
@@ -434,6 +436,14 @@
         				100% {
             					opacity: 1;
         				}
+    				}
+				/* Centrado de la página */
+    				body {
+        				display: flex;
+        				justify-content: center;
+       	 				align-items: center;
+        				height: 100vh; /* Ocupa toda la altura de la pantalla */
+        				margin: 0;
     				}
 			</style>
 
