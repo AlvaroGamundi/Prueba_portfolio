@@ -355,14 +355,23 @@
     					<img src="imagen17.png" alt="Project Design Image" style="width: 40%; height: auto; aspect-ratio: 6.1 / 2.8;">
 			
 				</div>
-			<p>As can be seen, the error made by the model in predicting the level of not amortised loan when default occurs is high. Nevertheless, it should be noted that errors in this type of risk acquisition models are generally significantly higher than those in behavioural models, marketing, customer management, etc., as much less customer information is available when running the model.</p>
+			<p>As can be seen, the error made by the model in predicting the Exposure at Default (EAD) when default occurs is high. Nevertheless, it should be noted that errors in this type of risk acquisition models are generally significantly higher than those in behavioural models, marketing, customer management, etc., as much less customer information is available when running the model.</p>
 			<p>In the same vein, it should also be noted that both defaulting and non-defaulting borrowers are being modelled, as this information is not available for a new customer. Therefore, on many occasions the model will be trying to predict the exposure at default of borrowers who are unlikely to default, which also explains the level of errors obtained in the modelling.</p>
 			<div style="text-align: center;margin-top: 20px;">
     					<img src="imagen18.png" alt="Project Design Image" style="width: 80%; height: auto; aspect-ratio: 15.1 / 8.9;">
 			
 				</div>
 
+			<p>It can be seen that in reality (ead_true) three large groups can be distinguished, a majority group of borrowers whose exposure to default is zero, a second group with intermediate exposures (0.25-0.75), and a last group where all those borrowers with greater exposure to default are concentrated.</p>
+			<p>Model’s predictions tend towards intermediate default exposures, which leads to larger errors in predicting those borrowers with very low or very high actual default exposures.</p>
+			<ul>
+  				<li>For customers who will actually have very limited exposures at default, the model predicts that they will have some degree of exposure to default, which will lead to somewhat higher fees/interest being charged than they would be entitled to.</li>
+			</ul>
+			<ul>
+  				<li>For customers with high actual default exposures: the model will tend to predict lower than actual default exposures, so that lower fees/interest will be applied than would be the case.</li>
+			</ul>
 
+			<p>However, at an aggregate level from a business point of view the performance of the model is quite acceptable, as it will be covering the part of fees/interest not collected from borrowers who end up having high exposure defaults with the additional surcharges/interest charged to those customers who eventually did not have defaults, thus covering the aggregate risk of the client portfolio.</p>
 
 
 			<p><strong><u>Loss given default model (LGD)</u></strong></p>
