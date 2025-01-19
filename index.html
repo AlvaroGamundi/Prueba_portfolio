@@ -349,6 +349,21 @@
 			
 				</div>
 			<p><strong><u>Exposure at default model (EAD)</u></strong></p>
+			<p>At this stage, different combinations of algorithms (Ridge, Lasso, LightGBM) and hyperparameters have been tested to identify those with the best performance. It has been found that the <strong>LightGBM</strong> architecture performs the best, achieving a Mean Absolute Error (<strong>MAE</strong>) of <strong>0.23</strong>.</p>
+			<p>In the following image, we can see the correlation between the predicted values and the actual values.</p>
+			<div style="text-align: center;margin-top: 20px;">
+    					<img src="imagen17.png" alt="Project Design Image" style="width: 40%; height: auto; aspect-ratio: 6.1 / 2.8;">
+			
+				</div>
+			<p>As can be seen, the error made by the model in predicting the level of not amortised loan when default occurs is high. Nevertheless, it should be noted that errors in this type of risk acquisition models are generally significantly higher than those in behavioural models, marketing, customer management, etc., as much less customer information is available when running the model.</p>
+			<p>In the same vein, it should also be noted that both defaulting and non-defaulting borrowers are being modelled, as this information is not available for a new customer. Therefore, on many occasions the model will be trying to predict the exposure at default of borrowers who are unlikely to default, which also explains the level of errors obtained in the modelling.</p>
+			<div style="text-align: center;margin-top: 20px;">
+    					<img src="imagen18.png" alt="Project Design Image" style="width: 80%; height: auto; aspect-ratio: 15.1 / 8.9;">
+			
+				</div>
+
+
+
 
 			<p><strong><u>Loss given default model (LGD)</u></strong></p>
 			
