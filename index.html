@@ -325,7 +325,17 @@
 
 
 			<li class="toggle-section" onclick="toggleNested(2, 8)">8. Modelling</li>
-                        <div class="nested-content" id="nested-2-8">Content about Modelling...</div>
+                        <div class="nested-content" id="nested-2-8">
+			<p>At this stage of the project, the primary focus is on the selection and <strong>optimization of predictive models</strong>, along with the search for the best combination of hyperparameters. The goal is to <strong>maximize evaluation metrics</strong> that reflect high predictive power, thereby ensuring robust performance of the selected algorithms.</p>
+			<p><strong><u>Probability of default model (PD)</u></strong></p>
+			<p>As previously explained, a logistic regression algorithm was chosen for the probability of default (PD) model. This type of model is particularly sensitive to correlations between variables. Therefore, a correlation analysis was conducted, and the results are presented below.</p>
+			<div style="text-align: center;margin-top: 20px;">
+    					<img src="Imagen14.png" alt="Project Design Image" style="width: 40%; height: auto; aspect-ratio: 6.5 / 8.2;">
+				</div>
+			<p>In this analysis, a strong correlation was identified between the variables <strong>tipo_interes</strong> and <strong>rating</strong>, as well as between <strong>importe_cuota</strong> and <strong>principal</strong>. These four variables stand out as the ones with the strongest correlations within the dataset. On the other hand, most of the other correlations detected originate from One-Hot Encoding (OHE) processes. At first glance, it does not seem advisable to remove these OHE-derived variables, as doing so would result in the loss of part of the information contained in the original variables from which they are derived.</p>
+
+
+			</div>
 			<li class="toggle-section" onclick="toggleNested(2, 9)">9. Web app</li>
                         <div class="nested-content" id="nested-2-9">Content about Web app...</div>
                     </ul>
