@@ -155,19 +155,31 @@
                     <ul>
 			<li class="toggle-section" onclick="toggleNested(1, 1)">1. Introduction</li>
 			<div class="nested-content" id="nested-1-1">
-    			   <p>The client is an <u>airline company</u> that requires the development of a <u>comment management application</u>. The application should be able to analyze the <u>sentiment</u> of the comments—whether <u>positive</u>, <u>neutral</u>, or <u>negative</u>—and generate an <u>appropriate response</u> based on the identified sentiment.</p>
+    			   <p>The client is an <strong>airline company</strong> that requires the development of a <strong>comment management application</strong>. The application should be able to analyze the <strong>sentiment</strong> of the comments—whether <strong>positive</strong>, <strong>neutral</strong>, or <strong>negative</strong>—and generate an <strong>appropriate response</strong> based on the identified sentiment.</p>
+
 			</div>
 
 			<li class="toggle-section" onclick="toggleNested(1, 2)">2. Objectives</li>
 			<div class="nested-content" id="nested-1-2">
-    			   <p></p>
-    			   <p></p>
+    			   <p>For this case, a <strong>Deep Learning</strong> predictive model will be created to train a <strong>neural network</strong> using a dataset obtained from <strong>Kaggle</strong>. The dataset consists of <strong>tweets</strong> about flight experiences with different <strong>airlines</strong>, classified at a high level as <strong>positive</strong>, <strong>negative</strong>, and <strong>neutral</strong>.</p>
+
 			</div>
 
 			<li class="toggle-section" onclick="toggleNested(1, 3)">3. Understanding the Problem</li>
 			<div class="nested-content" id="nested-1-3">
-    			   <p></p>
-    			   <p></p>
+    			   <p>The main idea behind this project is to create an application that can solve flight-related issues by identifying the problem from the user's comment and providing an appropriate solution. However, due to the limited size of the dataset, the neural network can only be trained for a <strong>multiclass classification</strong> with 3 classes: <strong>positive</strong>, <strong>neutral</strong>, and <strong>negative</strong>.</p>
+    			   <p>Ideally, it would be more optimal to classify the issues into a greater number of categories. Some of the possible categories that could be included in the dataset are as follows:</p>
+    			   <ul>
+        			<li><strong>Late Flight</strong></li>
+        			<li><strong>Customer Service Issue</strong></li>
+        			<li><strong>Flight Attendant Complaints</strong></li>
+        			<li><strong>Lost Luggage</strong></li>
+        			<li><strong>Flight Booking Problems</strong></li>
+        			<li><strong>Cancelled Flight</strong></li>
+        			<li><strong>Bad Flight</strong></li>
+        			<li><strong>Can't Tell</strong></li>
+    			   </ul>
+    			   <p>Incorporating these categories would allow for a more detailed classification and more accurate responses. However, this would require a larger volume of data, which would need to be obtained to train the model effectively. Expanding the classification levels would allow the model to identify specific issues like late flights, lost luggage, customer service problems, etc., but the dataset would need to be significantly larger to support this level of granularity.</p>
 			</div>
 
 			<li class="toggle-section" onclick="toggleNested(1, 4)">4. Project Design</li>
